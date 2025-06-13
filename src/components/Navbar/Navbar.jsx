@@ -42,7 +42,7 @@ const Navbar = () => {
             {/* Logo on the left side */}
             <div className="flex items-center">
               <img
-                src="src\assets\debjit-log-45.png" // Replace with your logo image path
+                src="\assets\debjit-log-45.png" // Replace with your logo image path
                 alt="Logo"
                 className="w-12 h-auto mx-2" // Adjust the size of the logo
               />

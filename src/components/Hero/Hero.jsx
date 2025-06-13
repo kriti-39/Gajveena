@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import Navbar from "../Navbar/Navbar";
-import bgImage from "../../assets/veena3.png"; // your image
+import bgImage from "/assets/veena3.png"; // your image
 
 const Hero = () => {
   const [opacity, setOpacity] = useState(0); // Start fully transparent for fade-in

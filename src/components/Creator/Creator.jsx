@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";  // Import framer-motion for scroll-driven animations
 
 const creatorData = {
   description: "Debjit Mahalanobis is a composer, double bassist, and instrument-maker who bridges Indian classical music with Western traditions through innovation and deep-rooted practice. Trained in Western classical double bass for over a decade and a disciple of Ustad Bahauddin Dagar of the Dagarvani Dhrupad lineage, Debjit has long explored the deep, meditative sound world of low frequency instruments. His quest to find a voice that could fully express the nuances of Indian classical music led him to invent the Gajveena, a hybrid string instrument inspired by the double bass and rudra veena. With its ability to support both bowing and plucking techniques, and designed to accommodate Indian ornamentations like gamak and meend, the Gajveena offers a new bass voice for Indian music. It merges the tonal warmth and harmonic depth of Western instruments with the microtonal flexibility and spiritual essence of the veena tradition offering a fresh yet grounded musical language for contemporary expression. He has performed with renowned orchestras across India and abroad, and continues to lead intercultural collaborations. Through the Gajveena, Debjit invites listeners into a sonic world that is both ancient and boldly new. ",
-  image: 'src/assets/DM.JPG',  // Placeholder image for the creator
+  image: '/assets/DM.JPG',  // Placeholder image for the creator
 };
 
 const Creator = () => {

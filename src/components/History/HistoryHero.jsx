@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'; // Importing framer-motion for animations
 import { useInView } from 'react-intersection-observer'; // Import useInView to trigger animations when the element comes into view
 

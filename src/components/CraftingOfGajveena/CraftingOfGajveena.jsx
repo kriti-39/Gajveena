@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -43,7 +44,7 @@ const CraftingOfGajveena = () => {
           transition={{ duration: 1, delay: 0.7 }}
         >
           <img
-            src="src/assets/rv.png"
+            src="/assets/rv.png"
             alt="Rudra Veena"
             className="w-[32rem] h-auto rounded-lg shadow-md mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
@@ -58,7 +59,7 @@ const CraftingOfGajveena = () => {
           transition={{ duration: 1, delay: 0.9 }}
         >
           <img
-            src="src/assets/db.png"
+            src="/assets/db.png"
             alt="Double Base"
             className="w-[32rem] h-auto rounded-lg shadow-md mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
@@ -75,20 +76,20 @@ const CraftingOfGajveena = () => {
       >
         {/* Left design image - flush left, hidden on mobile */}
         <img
-          src="src/assets/side.png"
+          src="/assets/side.png"
           alt="Left design"
           className="hidden md:block w-[12rem] h-auto object-contain opacity-50 transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
 
         {/* Center combined veena image */}
         <img
-          src="src/assets/gajveena.JPG"
+          src="/assets/gajveena.JPG"
           alt="Gajveena"
           className="w-[28rem] h-auto rounded-lg shadow-lg object-contain transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
         {/* Right design image - flush right, hidden on mobile */}
         <img
-          src="src/assets/side2.png"
+          src="/assets/side2.png"
           alt="Right Design"
           className="hidden md:block w-[12rem] h-auto object-contain opacity-50 transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
