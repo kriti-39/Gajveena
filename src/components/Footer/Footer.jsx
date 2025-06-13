@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             {/* Logo (Visible only on desktop) */}
             <img
-              src="src\assets\debjit-log-45.png" // Replace with your logo image path
+              src="\assets\debjit-log-45.png" // Replace with your logo image path
               alt="Logo"
               className="w-18 h-auto mb-2 hidden md:block mx-2 pt-2" // Hide on mobile
             />

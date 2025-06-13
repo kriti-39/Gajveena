@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Image1 from "../../assets/thumba.png";
-import Image2 from "../../assets/v9.1.png";
+import Image2 from "/assets/v9.1.png";
+import Image1 from "/assets/thumba.png";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

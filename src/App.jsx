@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
 import History from "./pages/History";
-import bgVideo from "./assets/bg.mp4";
+import bgVideo from "/assets/bg.mp4";
 import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
