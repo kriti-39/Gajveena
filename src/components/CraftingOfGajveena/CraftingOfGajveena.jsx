@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import rvImg from '../../assets/rv.png';
 import dbImg from '../../assets/db.png';
 import sideImg from '../../assets/side.png';
-import gajveenaImg from '../../assets/gajveena.JPG';
+import gajveenaImg from '../../assets/maingajveena.jpg';
 import side2Img from '../../assets/side2.png';
 
 const CraftingOfGajveena = () => {
