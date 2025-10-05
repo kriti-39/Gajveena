@@ -3,6 +3,8 @@ import Image1 from "../../assets/thumba.png";
 import Image2 from "../../assets/v9.1.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import "./TheStory.css";
+
 
 const TheStory = () => {
   const [parallaxY, setParallaxY] = useState(0);
@@ -64,7 +66,7 @@ const TheStory = () => {
               y: leftTextInView ? 0 : 30,
             }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="font-body w-[85%] text-left text-lg md:text-xl"
+            className="font-body w-[85%] text-left text-lg md:text-lg"
           >
             Conceived in 2018, the Gajveena is a groundbreaking musical
             invention by Debjit Mahalanobis, born out of a deep desire to bridge

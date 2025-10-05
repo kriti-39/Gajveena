@@ -84,3 +84,47 @@
   }
 }
 
+/* ========== Responsive Adjustments ========== */
+
+/* For tablets (max width 1024px) */
+@media (max-width: 1024px) {
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  .hero-tagline {
+    font-size: 2.2rem;
+  }
+}
+
+/* For large phones (max width 768px) */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 3.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-tagline {
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+  }
+}
+
+/* For small phones (max width 480px) */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-tagline {
+    font-size: 1.4rem;
+  }
+
+  .hero-image {
+    object-position: center top;
+  }
+}
