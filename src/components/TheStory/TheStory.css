@@ -46,6 +46,7 @@
     margin: 1rem auto !important;
     padding: 0 1rem !important;
     order: 2;
+
   }
 
   /* Remove desktop negative margins */
@@ -54,8 +55,8 @@
   .the-story-section .pr-[15%],
   .the-story-section .ml-[5%],
   .the-story-section .mt-[-5%] {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0rem !important;
+    padding: 0rem!important;
   }
 
   /* Second block adjustments */
