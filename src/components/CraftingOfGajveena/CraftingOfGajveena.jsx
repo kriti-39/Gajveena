@@ -2,6 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+// ✅ Import all images from src/assets
+import rvImg from '../../assets/rv.png';
+import dbImg from '../../assets/db.png';
+import sideImg from '../../assets/side.png';
+import gajveenaImg from '../../assets/gajveena.JPG';
+import side2Img from '../../assets/side2.png';
+
 const CraftingOfGajveena = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -43,7 +50,7 @@ const CraftingOfGajveena = () => {
           transition={{ duration: 1, delay: 0.7 }}
         >
           <img
-            src="src/assets/rv.png"
+            src={rvImg}
             alt="Rudra Veena"
             className="w-full max-w-[28rem] sm:max-w-[32rem] h-auto rounded-lg shadow-md mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
@@ -58,7 +65,7 @@ const CraftingOfGajveena = () => {
           transition={{ duration: 1, delay: 0.9 }}
         >
           <img
-            src="src/assets/db.png"
+            src={dbImg}
             alt="Double Base"
             className="w-full max-w-[28rem] sm:max-w-[32rem] h-auto rounded-lg shadow-md mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
@@ -75,21 +82,21 @@ const CraftingOfGajveena = () => {
       >
         {/* Left design image - hidden on mobile */}
         <img
-          src="src/assets/side.png"
+          src={sideImg}
           alt="Left design"
           className="hidden md:block w-[10rem] lg:w-[12rem] h-auto object-contain opacity-50 transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
 
         {/* Center combined veena image */}
         <img
-          src="src/assets/gajveena.JPG"
+          src={gajveenaImg}
           alt="Gajveena"
           className="w-full max-w-[24rem] sm:max-w-[28rem] h-auto rounded-lg shadow-lg object-contain transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
 
         {/* Right design image - hidden on mobile */}
         <img
-          src="src/assets/side2.png"
+          src={side2Img}
           alt="Right Design"
           className="hidden md:block w-[10rem] lg:w-[12rem] h-auto object-contain opacity-50 transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
