@@ -1,39 +1,89 @@
-/* TheStory.css */
+/* Desktop view: untouched */
+.the-story-section {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
-/* Responsive Layout Fixes */
+/* Tablet: up to 1024px */
 @media (max-width: 1024px) {
   .the-story-section {
     padding: 0 2rem;
   }
 }
 
+/* Mobile: up to 768px */
 @media (max-width: 768px) {
-  .the-story-section {
-    flex-direction: column;
+  /* Stack all blocks vertically */
+  .the-story-section > div {
+    flex-direction: column !important;
     align-items: center;
+    justify-content: center;
+    margin-top: 2rem !important;
   }
 
-  .the-story-section img {
-    width: 90% !important;
-    height: auto;
+  /* Hide first image */
+  .the-story-section > div:first-child img {
+    display: none !important;
   }
 
-  .the-story-section h1,
-  .the-story-section p {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
+  /* First block heading & paragraph */
+  .the-story-section > div:first-child .motion-h1,
+  .the-story-section > div:first-child h1 {
+    width: 100% !important;
+    text-align: justify !important;
+    margin: 1rem auto !important;
+    padding: 0 1rem !important;
+    order: 1;
+  }
+
+  .the-story-section > div:first-child .motion-p,
+  .the-story-section > div:first-child p {
+    width: 100% !important;
+    max-width: none !important;
+    text-align: justify !important;
+    margin: 1rem auto !important;
+    padding: 0 1rem !important;
+    order: 2;
+  }
+
+  /* Remove desktop negative margins */
+  .the-story-section .mt-[-8%],
+  .the-story-section .ml-[-20%],
+  .the-story-section .pr-[15%],
+  .the-story-section .ml-[5%],
+  .the-story-section .mt-[-5%] {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Second block adjustments */
+  .the-story-section > div:last-child img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 1rem 0 !important;
+  }
+
+  .the-story-section > div:last-child p {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: justify !important;
+    margin: 1rem auto !important;
+    padding: 0 1rem !important;
   }
 }
 
+/* Extra small screens: up to 480px */
 @media (max-width: 480px) {
   .the-story-section h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .the-story-section p {
-    font-size: 1rem;
-    line-height: 1.4;
-    padding: 0 1rem;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    padding: 0 0.5rem !important;
   }
 }

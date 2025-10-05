@@ -7,7 +7,7 @@ import avImg from "../../assets/av.png";
 import rvImg from "../../assets/rv.png";
 import vvImg from "../../assets/vv.png";
 import svImg from "../../assets/sv.png";
-import gajveenaImg from "../../assets/gajveena.JPG";
+import gajveenaImg from "../../assets/gajveena.jpg";
 
 const evolutionData = [
   {
