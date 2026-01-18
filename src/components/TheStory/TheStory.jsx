@@ -66,7 +66,7 @@ const TheStory = () => {
               y: leftTextInView ? 0 : 30,
             }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="font-body w-[85%] text-left text-lg md:text-lg"
+            className="font-body w-[80%] text-left text-lg md:text-lg"
           >
             Conceived in 2018, the Gajveena is a groundbreaking musical
             invention by Debjit Mahalanobis, born out of a deep desire to bridge

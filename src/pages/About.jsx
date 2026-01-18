@@ -14,10 +14,10 @@ const AboutPage = () => {
       <div className='pt-20'></div>
       <CreatorHero/>
       <Creator/>
-      <div className="text-center pt-10">
+      <div className="text-center pt-0 pb-8">
         <a
           href="http://debjitmahalanobis.com/"
-          className="text-xl text-yellowTint font-bold hover:text-white transition-colors duration-300"
+          className="text-lg text-yellowTint font-bold hover:text-white transition-colors duration-300"
         >
           Explore my other work
         </a>

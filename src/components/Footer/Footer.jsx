@@ -20,16 +20,16 @@ const Footer = () => {
           </div>
 
           {/* Right Column: Links and Social Media */}
-          <div className="flex flex-col pt-4 md:flex-row justify-center md:justify-between gap-12 md:space-x-12">
+          <div className="flex flex-col pt-0 md:flex-row justify-center md:justify-between gap-12 md:space-x-12">
             {/* Links Column (Home, About, Creator) */}
-            <div className="flex flex-col items-center md:items-start space-y-2 mb-6 md:mb-0">
+            <div className="flex flex-col items-center md:items-start space-y-2 mb-0 md:mb-0">
               <a href="/" className="text-[17px] hover:text-yellow-100">Home</a>
               <a href="/about" className="text-[17px] hover:text-yellow-100">History</a>
               <a href="/creator" className="text-[17px] hover:text-yellow-100">Creator</a>
             </div>
 
             {/* Social Media Column (Instagram, Facebook, YouTube) */}
-            <div className="flex flex-col items-start space-y-2">
+            <div className="flex flex-col items-center md:items-start space-y-2  mb-2 md:mb-0">
               <a href="https://instagram.com" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
                 <FaInstagram />
                 <span>Instagram</span>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* Horizontal Line */}
-        <div className="border-t border-white opacity-50 my-4 mx-[-5%]"></div>
+        <div className="border-t border-white opacity-50 my-4 mx-[-50%]"></div>
 
         {/* Copyright */}
         <div className="text-center">

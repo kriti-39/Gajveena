@@ -1,48 +1,51 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Importing framer-motion for animations
-import { useInView } from 'react-intersection-observer'; // Import useInView to trigger animations when the element comes into view
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const HistoryHero = () => {
-  // Set up useInView for triggering animations when the section comes into view
   const { ref, inView } = useInView({
-    triggerOnce: true,  // Trigger animation only once
-    threshold: 0.3,     // Trigger animation when 30% of the element is visible
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   return (
     <section
       ref={ref}
-      className="relative text-offwhite py-20 px-6 flex flex-col items-center justify-center"
+      className="relative text-offwhite mb-[-34px] md:pt-24 md:mb-4 px-4 sm:px-6 flex flex-col items-center justify-center overflow-hidden"
     >
-      {/* Heading Animation */}
+      {/* Heading */}
       <motion.h1
-        className="font-cinzel text-4xl md:text-6xl text-yellowTint mb-4 mt-4"
-        initial={{ opacity: 0, y: 30 }}  // Initial state: off-screen and transparent
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }} // Animates to normal position when in view
-        transition={{ duration: 1, delay: 0.2 }}  // Duration and delay for the animation
+        className="font-cinzel px-6 text-4xl md:text-6xl text-yellowTint text-center mb-4"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
         Brief History of Veena
       </motion.h1>
 
-      {/* Subheading Animation */}
+      {/* Subheading */}
       <motion.h2
-        className="text-xl md:text-2xl text-white mb-8"
-        initial={{ opacity: 0, y: 30 }}  // Initial state: off-screen and transparent
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }} // Animates to normal position when in view
-        transition={{ duration: 1, delay: 0.5 }}  // Duration and delay for the animation
+        className="text-base md:text-lg text-white text-center mb-6"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
-        A Journey Through Time and Sound
+        A Journey Through Time &amp; Sound
       </motion.h2>
 
-      {/* Paragraph Animation */}
+      {/* Paragraph */}
       <motion.p
-        className="text-white text-lg md:text-xl max-w-4xl text-center mb-[-80px]"
-        initial={{ opacity: 0, y: 30 }}  // Initial state: off-screen and transparent
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }} // Animates to normal position when in view
-        transition={{ duration: 1, delay: 0.7 }}  // Duration and delay for the animation
-      >
-        The veena has evolved over centuries, from its early origins in Vedic traditions to the modern-day instrument. With each passing era, its design, sound, and role in music have undergone significant changes, making it one of the most iconic instruments in Indian classical music.
-      </motion.p>
+  className="text-white px-4 text-base md:text-lg max-w-4xl text-justify md:text-center mb-6"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
+  transition={{ duration: 1, delay: 0.7 }}
+>
+  The veena has evolved over centuries, from its early origins in Vedic
+  traditions to the modern-day instrument. With each passing era, its
+  design, sound, and role in music have undergone significant changes,
+  making it one of the most iconic instruments in Indian classical music.
+</motion.p>
+
     </section>
   );
 };

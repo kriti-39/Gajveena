@@ -18,7 +18,8 @@ const CraftingOfGajveena = () => {
   return (
     <section
       ref={ref}
-      className="relative text-offwhite pt-16 md:pt-20 px-4 sm:px-6 flex flex-col items-center justify-center overflow-hidden"
+      className="relative text-offwhite pt-8 md:pt-20 px-6 sm:px-6 flex flex-col items-center justify-center overflow-hidden"
+
     >
       {/* Heading */}
       <motion.h2
@@ -32,7 +33,7 @@ const CraftingOfGajveena = () => {
 
       {/* Paragraph */}
       <motion.p
-        className="text-white text-base sm:text-lg md:text-xl max-w-3xl md:max-w-4xl text-center mb-12 md:mb-16 tracking-wide px-2"
+         className="text-white text-base sm:text-lg md:text-xl max-w-3xl md:max-w-4xl text-justify md:text-center mb-10 md:mb-16 tracking-wide px-2"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -60,7 +61,7 @@ const CraftingOfGajveena = () => {
         {/* Column 2 */}
         <motion.div
           className="flex flex-col items-center text-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
           transition={{ duration: 1, delay: 0.9 }}
         >
@@ -69,15 +70,15 @@ const CraftingOfGajveena = () => {
             alt="Double Base"
             className="w-full max-w-[28rem] sm:max-w-[32rem] h-auto rounded-lg shadow-md mb-4 transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
-          <p className="text-lg md:text-xl text-white-300 max-w-xs">Double Base</p>
+          <p className="text-lg md:text-xl text-white-300 max-w-xs">Double Bass</p>
         </motion.div>
       </div>
 
       {/* Final Combined Image Row */}
       <motion.div
         className="w-full flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 md:gap-0"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
         transition={{ duration: 1, delay: 1.1 }}
       >
         {/* Left design image - hidden on mobile */}
@@ -101,6 +102,7 @@ const CraftingOfGajveena = () => {
           className="hidden md:block w-[10rem] lg:w-[12rem] h-auto object-contain opacity-50 transition-transform duration-300 ease-in-out transform hover:scale-105"
         />
       </motion.div>
+      <p className="text-lg py-5 md:text-xl text-white-300 max-w-xs">Gajveena</p>
     </section>
   );
 };

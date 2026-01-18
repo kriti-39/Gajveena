@@ -22,6 +22,9 @@
     justify-content: center;
     margin-top: 2rem !important;
   }
+  .the-story-section {
+  margin-top: -8rem;
+}
 
   /* Hide first image */
   .the-story-section > div:first-child img {
@@ -64,7 +67,7 @@
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    margin: 1rem 0 !important;
+    margin: 1.6rem 0 !important;
   }
 
   .the-story-section > div:last-child p {

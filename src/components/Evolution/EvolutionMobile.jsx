@@ -1,8 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";  // Import framer-motion for scroll-driven animations
 
-// ✅ Import all images
+// images
 import avImg from "/assets/av.png";
 import rvImg from "/assets/rv.png";
 import vvImg from "/assets/vv.png";
@@ -37,103 +37,54 @@ const evolutionData = [
   }
 ];
 
-const Evolution = () => {
+const EvolutionMobile = () => {
   return (
-    <section className="evolution-section hidden md:block pt-24 md:pt-10 pb-10 text-offwhite">
-      <div className="container mx-auto px-6">
-        {/* Evolution Items */}
-        <div className="flex flex-col space-y-20">
-          {evolutionData.map((item, index) => (
-            <EvolutionItem key={index} index={index} data={item} />
-          ))}
-        </div>
+    <section className="block md:hidden pt-4 pb-12 text-offwhite">
+      <div className="px-8 space-y-6">
+        {evolutionData.map((item, index) => (
+          <MobileItem key={index} data={item} />
+        ))}
       </div>
     </section>
   );
 };
 
-// Evolution Item Component
-const EvolutionItem = ({ index, data }) => {
+const MobileItem = ({ data }) => {
   const { ref, inView } = useInView({
-  triggerOnce: true, 
-  threshold: 0.2,
-});
-
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   return (
-    <div
-  ref={ref}
-  className={`evolution-item flex flex-col md:flex-row items-center gap-6 ${
-    inView ? "visible" : ""
-  }`}
->
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="space-y-8"
+    >
+      {/* Divider */}
+<div className="w-80% h-[1px] bg-white/30 mx-auto mt-8"></div>
+      {/* TITLE */}
+      <h3 className="text-3xl font-cinzel text-yellowTint text-center">
+        {data.title}
+      </h3>
 
-  {index % 2 === 0 ? (
-    <>
-      {/* IMAGE - LEFT */}
-      <motion.div
-        className="evolution-image w-full md:w-1/2 flex justify-center items-center"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ delay: 0.2, duration: 1 }}
-      >
-        <img
-          src={data.image}
-          alt={data.title}
-          className="w-full max-w-[20rem] md:max-w-[30rem] h-auto rounded-lg shadow-lg"
-        />
-      </motion.div>
+      {/* IMAGE */}
+      <img
+        src={data.image}
+        alt={data.title}
+        className="w-full max-w-[20rem] mx-auto rounded-lg shadow-lg"
+      />
 
-      {/* TEXT - LEFT */}
-      <motion.div
-        className="evolution-text w-full md:w-1/2 mt-6 md:mt-0 text-left"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ delay: 0.4, duration: 1 }}
-      >
-        <h3 className="text-4xl md:text-5xl font-cinzel text-yellowTint mb-4">
-          {data.title}
-        </h3>
-        <p className="text-white text-base md:text-lg w-full md:w-[78%] text-justify md:text-left">
-          {data.description}
-        </p>
-      </motion.div>
-    </>
-  ) : (
-    <>
-      {/* TEXT - RIGHT */}
-      <motion.div
-        className="evolution-text w-full md:w-1/2 mt-6 md:mt-0 text-right"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ delay: 0.2, duration: 1 }}
-      >
-        <h3 className="text-4xl md:text-5xl font-cinzel text-yellowTint mb-4">
-          {data.title}
-        </h3>
-        <p className="text-white text-base md:text-lg w-full md:w-[78%] text-justify md:text-right md:ml-auto">
-          {data.description}
-        </p>
-      </motion.div>
+      {/* TEXT */}
+      <p className="text-white text-base leading-relaxed text-justify">
+        {data.description}
+      </p>
+      
 
-      {/* IMAGE - RIGHT */}
-      <motion.div
-        className="evolution-image w-full md:w-1/2 flex justify-center items-center"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-        transition={{ delay: 0.4, duration: 1 }}
-      >
-        <img
-          src={data.image}
-          alt={data.title}
-          className="w-full max-w-[20rem] md:max-w-[30rem] h-auto rounded-lg shadow-lg"
-        />
-      </motion.div>
-    </>
-  )}
-</div>
-
+    </motion.div>
   );
 };
 
-export default Evolution;
+export default EvolutionMobile;

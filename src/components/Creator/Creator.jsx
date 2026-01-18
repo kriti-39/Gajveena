@@ -14,7 +14,7 @@ const creatorData = {
 const Creator = () => {
   return (
     <section className="creator-section py-12 text-offwhite">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8">
+      <div className="container mx-auto px-6 sm:px-6 md:px-8">
         <CreatorItem data={creatorData} />
       </div>
     </section>
@@ -34,37 +34,38 @@ const CreatorItem = ({ data }) => {
 
   return (
     <div
-      ref={ref}
-      className={`creator-item flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 ${
-        hasAnimated ? "visible" : ""
-      }`}
-    >
-      {/* Image */}
-      <motion.div
-        className="creator-image w-full md:w-1/2 flex justify-center"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
-        transition={{ delay: 0.2, duration: 1 }}
-      >
-        <img
-          src={data.image}
-          alt="Debjit Mahalanobis"
-          className="w-full max-w-[26rem] md:max-w-[28rem] h-auto rounded-lg shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-        />
-      </motion.div>
+  ref={ref}
+  className={`creator-item flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-0 ${
+    hasAnimated ? "visible" : ""
+  }`}
+>
+  {/* Image */}
+  <motion.div
+    className="creator-image w-full md:w-1/2 flex justify-center px-2"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
+    transition={{ delay: 0.2, duration: 1 }}
+  >
+    <img
+      src={data.image}
+      alt="Debjit Mahalanobis"
+      className="w-full max-w-[26rem] md:max-w-[28rem] h-auto rounded-lg shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+    />
+  </motion.div>
 
-      {/* Text */}
-      <motion.div
-        className="creator-text w-full md:w-1/2 text-left"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
-        transition={{ delay: 0.4, duration: 1 }}
-      >
-        <p className="text-white text-base sm:text-lg leading-relaxed tracking-wide">
-          {data.description}
-        </p>
-      </motion.div>
-    </div>
+  {/* Text */}
+  <motion.div
+    className="creator-text w-full md:w-[60%] md:pr-[8%] text-justify md:text-left px-2 pt-4"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
+    transition={{ delay: 0.4, duration: 1 }}
+  >
+    <p className="text-white text-base sm:text-lg leading-relaxed tracking-wide">
+      {data.description}
+    </p>
+  </motion.div>
+</div>
+
   );
 };
 
