@@ -12,7 +12,7 @@ const Home = () => {
      <TheStory/>
      <CraftingOfGajveena/>
      <HistoryHero />
-      <div className="text-center">
+      <div className="text-center py-10">
         <a
           href="/history"
           className="text-xl text-yellowTint font-bold hover:text-white transition-colors duration-300"
@@ -21,7 +21,7 @@ const Home = () => {
         </a>
       </div>
       <Creator />
-      <div className="text-center">
+      <div className="text-center py-10">
         <a
           href="/about"
           className="text-xl text-yellowTint font-bold hover:text-white transition-colors duration-300"

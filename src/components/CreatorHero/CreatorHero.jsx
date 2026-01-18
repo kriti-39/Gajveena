@@ -11,7 +11,7 @@ const Creator = () => {
   return (
     <section
       ref={ref}
-      className="relative text-offwhite py-20 sm:py-28 md:py-40 px-4 sm:px-6 flex flex-col items-center justify-center text-center"
+      className="relative text-offwhite py-20 sm:py-28 md:py-0 px-4 sm:px-6 flex flex-col items-center justify-center text-center"
     >
       {/* Heading */}
       <motion.h1

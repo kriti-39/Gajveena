@@ -12,7 +12,7 @@ const HistoryHero = () => {
   return (
     <section
       ref={ref}
-      className="relative text-offwhite py-40 px-6 flex flex-col items-center justify-center"
+      className="relative text-offwhite py-20 px-6 flex flex-col items-center justify-center"
     >
       {/* Heading Animation */}
       <motion.h1
