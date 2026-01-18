@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 // ✅ Import the creator image
-import DMImg from "../../assets/DM.JPG";
+import DMImg from "/assets/DM.JPG";
 
 const creatorData = {
   description:

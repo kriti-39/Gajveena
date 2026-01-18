@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 // ✅ Import all images from src/assets
-import rvImg from '../../assets/rv.png';
-import dbImg from '../../assets/db.png';
-import sideImg from '../../assets/side.png';
-import gajveenaImg from '../../assets/maingajveena.jpg';
-import side2Img from '../../assets/side2.png';
+import rvImg from '/assets/rv.png';
+import dbImg from '/assets/db.png';
+import sideImg from '/assets/side.png';
+import gajveenaImg from '/assets/maingajveena.jpg';
+import side2Img from '/assets/side2.png';
 
 const CraftingOfGajveena = () => {
   const { ref, inView } = useInView({

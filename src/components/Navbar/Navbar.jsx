@@ -39,7 +39,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/src/assets/debjit-log-45.png" // Vite-friendly path
+              src="/assets/debjit-log-45.png" // Vite-friendly path
               alt="Logo"
               className="w-12 h-auto mr-2"
             />

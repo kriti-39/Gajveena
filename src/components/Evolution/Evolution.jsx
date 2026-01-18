@@ -3,11 +3,11 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";  // Import framer-motion for scroll-driven animations
 
 // ✅ Import all images
-import avImg from "../../assets/av.png";
-import rvImg from "../../assets/rv.png";
-import vvImg from "../../assets/vv.png";
-import svImg from "../../assets/sv.png";
-import gajveenaImg from "../../assets/maingajveena.jpg";
+import avImg from "/assets/av.png";
+import rvImg from "/assets/rv.png";
+import vvImg from "/assets/vv.png";
+import svImg from "/assets/sv.png";
+import gajveenaImg from "/assets/maingajveena.jpg";
 
 const evolutionData = [
   {
