@@ -22,7 +22,6 @@
 @media (max-width: 768px) {
   .the-story-section {
     padding: 0;
- 
   }
 
   .the-story-section > div {
@@ -40,16 +39,19 @@
   .the-story-section h1 {
     width: 100%;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0.75rem 0 0.5rem 0;
     padding: 0 1rem;
   }
 
   /* Paragraphs */
   .the-story-section p {
     width: 100%;
+    max-width: 36rem;          /* keeps text visually centered */
     text-align: justify;
-    margin: 1rem 0;
-    padding: 0 1rem;
+    margin: 0;                 /* 🔥 removes top margin */
+    padding: 0 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 
@@ -80,7 +82,7 @@
   }
 }
 
-/* MOBILE: use transform ONLY */
+/* Mobile: use transform ONLY */
 @media (max-width: 768px) {
   .story-overlap {
     margin-top: 0 !important;
@@ -89,18 +91,20 @@
   }
 }
 
-/* Very small phones */
+/* ================================
+   VERY SMALL PHONES (≤480px)
+================================ */
 @media (max-width: 480px) {
   .story-overlap {
     transform: translateY(-7.5rem);
   }
 
   .the-story-section h1 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 
   .the-story-section p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 }

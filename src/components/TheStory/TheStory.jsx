@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image1 from "/assets/thumba.png";
+import Image1 from "/assets/t3.png";
 import Image2 from "/assets/v9.1.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -90,11 +90,11 @@ const TheStory = () => {
 
       {/* Second Block: Image on left, Text on right */}
       <div className="flex flex-col md:flex-row items-center relative">
-        <div className="md:w-1/2 mt-[-8%] flex justify-center relative z-20">
+        <div className="md:w-1/2 flex justify-center relative z-20">
           <img
             src={Image2}
             alt="Gajveena Secondary"
-            className="w-[75%] h-auto object-cover transition-all duration-500"
+             className="w-[75%] h-auto object-cover transition-all duration-500 mt-[120px]"
             style={{ transform: `translateY(${parallaxY * 0.3}px)` }}
           />
         </div>

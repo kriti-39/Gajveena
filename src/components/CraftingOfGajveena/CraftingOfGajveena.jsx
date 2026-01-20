@@ -33,7 +33,7 @@ const CraftingOfGajveena = () => {
 
       {/* Paragraph */}
       <motion.p
-         className="text-white text-base sm:text-lg md:text-xl max-w-3xl md:max-w-4xl text-justify md:text-center mb-10 md:mb-16 tracking-wide px-2"
+         className="font-montserrat text-white text-base sm:text-lg md:text-xl max-w-3xl md:max-w-4xl text-justify md:text-center mb-10 md:mb-16 tracking-wide px-2"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
         transition={{ duration: 1, delay: 0.5 }}

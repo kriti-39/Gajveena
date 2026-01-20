@@ -3,12 +3,10 @@
 .hero-image {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 65%;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-  transition: opacity 0.9s ease;
   z-index: 5;
 }
 
@@ -36,12 +34,13 @@
 /* Heading */
 .hero-heading {
   font-family: 'Cinzel', serif;
-  font-size: 7rem;
+  font-size: 8rem;
   color: #f9e7c2;
   opacity: 0;
   animation: slideUp 4s ease forwards;
   animation-delay: 0.7s;
   letter-spacing: 0.1em;
+  font-weight: 700;
 }
 
 /* Tagline */
@@ -49,10 +48,11 @@
   font-family: 'Allura', cursive;
   font-size: 3rem;
   color: #f9e7c2;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   opacity: 0;
   animation: slideDown 4s ease forwards;
   animation-delay: 1.2s;
+  font-weight: 400;
 }
 
 /* Animations */
@@ -84,6 +84,9 @@
 @media (max-width: 1024px) {
   .hero-heading {
     font-size: 5rem;
+    animation: slideUp 3s ease forwards;
+  animation-delay: 0.5s;
+  
   }
 
   .hero-tagline {
@@ -126,6 +129,8 @@
   }
 
   .hero-image {
-    object-position: center top;
+    object-position: center ;
+    object-fit: contain;
+    transform: scale(2);
   }
 }

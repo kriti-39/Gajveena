@@ -11,11 +11,11 @@ const HistoryHero = () => {
   return (
     <section
       ref={ref}
-      className="relative text-offwhite mb-[-34px] md:pt-24 md:mb-4 px-4 sm:px-6 flex flex-col items-center justify-center overflow-hidden"
+      className="relative text-offwhite mb-[-34px] md:pt-10 md:mb-4 px-4 sm:px-6 flex flex-col items-center justify-center overflow-hidden"
     >
       {/* Heading */}
       <motion.h1
-        className="font-cinzel px-6 text-4xl md:text-6xl text-yellowTint text-center mb-4"
+        className="font-cinzel font-bold px-6 text-4xl md:text-6xl text-yellowTint text-center mb-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
         transition={{ duration: 1, delay: 0.2 }}

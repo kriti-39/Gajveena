@@ -6,7 +6,7 @@ import HistoryHero from '../components/History/HistoryHero.jsx';
 import Navbar from '../components/Navbar/Navbar.jsx';
 
 
-const History = () => {
+const Concept = () => {
   return (
     <>
       <Navbar />
@@ -20,4 +20,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default Concept;

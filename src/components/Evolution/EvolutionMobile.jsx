@@ -8,6 +8,9 @@ import rvImg from "/assets/rv.png";
 import vvImg from "/assets/vv.png";
 import svImg from "/assets/sv.png";
 import gajveenaImg from "/assets/maingajveena.jpg";
+import psImg from "/assets/ps.png";
+import sitarImg from "/assets/sitar.png"
+
 
 const evolutionData = [
   {
@@ -30,6 +33,16 @@ const evolutionData = [
     description: "The Saraswati veena, which emerged as the dominant veena in Carnatic music, featured a fretted neck, a large resonating body, and seven strings (four main and three sympathetic strings). Its design allowed for a balanced sound, with a mix of deep bass tones and bright treble sounds. The larger gourds helped to amplify the sound, ensuring that the veena was loud enough to be heard in ensemble performances. The frets provided more precise tuning and intonation, which was essential for performing intricate ragas with clarity. This made the Saraswati veena particularly suited for Carnatic compositions, where precision and control over pitch and tone were necessary. The instrument's physical modifications contributed to its ability to produce both powerful and delicate musical expressions, making it a versatile and central tool in South Indian classical music.",
     image: svImg,
   },
+  {
+      title: 'Persian Setar',
+      description: 'Indian classical music (ICM) has evolved through centuries of cultural exchange, particularly between Persian, Afghan, and Indian traditions. Early instruments like the Persian setar introduced sympathetic strings but lacked the microtonal flexibility (shruti) required for Indian ragas. As musical needs evolved, instruments were redesigned to accommodate greater tonal depth and expressive nuance.',
+      image : psImg, 
+    },
+    {
+      title: 'Sitar',
+      description: 'The global recognition of ICM in the 20th century, through artists such as Ravi Shankar and Ali Akbar Khan, reflects this long history of adaptation and innovation. The sitar emerged by integrating sympathetic drone strings (taraf), rhythmic drone strings (chikari), and resonating gourds (tumba), allowing for sustained resonance and melodic complexity',
+      image : sitarImg,
+    },
   {
     title: 'Gajveena',
     description: 'The Gajveena is a pioneering hybrid string instrument, born from the confluence of the North Indian Rudra Veena and the Western double bass, meticulously engineered to occupy a unique sonic niche in Indian Classical Music (ICM). Traditional ICM instruments fall neatly into plucked (sitar, tanpura) or bowed (esraj, dilruba) categories, leaving the bass register, so central to Western harmony largely unexplored; the Gajveena remedies this by marrying both playing techniques, allowing performers to alternate seamlessly between deep, resonant arco passages and percussive, drone rich pizzicato. Its four main strings, tuned to mirror the double bass’s low-end range, pass over a bespoke javari bridge that imparts the characteristic veena buzz and harmonic overtones, while an array of chikari drone strings sustains the essential shruti framework of Dhrupad. The instrument’s hollow neck and detachable tumba resonator amplify its dynamic range, from whisper-soft alap explorations to full bodied ensemble roles, enabling microtonal meend, gamak ornamentations, and extended sustain rarely achievable on conventional bass or veena alone. More than a technical innovation, the Gajveena symbolizes a philosophical bridge honoring centuries-old spiritual traditions of Nāda Brahma while inviting global musical dialogues, and charting a new course for both solo recital and cross-genre collaboration.',
@@ -66,7 +79,7 @@ const MobileItem = ({ data }) => {
       {/* Divider */}
 <div className="w-80% h-[1px] bg-white/30 mx-auto mt-8"></div>
       {/* TITLE */}
-      <h3 className="text-3xl font-cinzel text-yellowTint text-center">
+      <h3 className="text-3xl font-bold font-cinzel text-yellowTint text-center">
         {data.title}
       </h3>
 

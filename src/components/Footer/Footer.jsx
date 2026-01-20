@@ -15,8 +15,7 @@ const Footer = () => {
               alt="Logo"
               className="w-18 h-auto mb-2 hidden md:block mx-2 pt-2" // Hide on mobile
             />
-            <p className="text-lg font-semibold px-2">Contact</p>
-            <p className="text-lg px-2">+1234567890</p>
+            <p className="text-base text-center md:text-lg font-body font-semibold px-2">Contact : debjit.mahalanobis@gmail.com</p>
           </div>
 
           {/* Right Column: Links and Social Media */}

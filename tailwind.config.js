@@ -6,7 +6,7 @@ export default {
     extend: {
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
-        body: ["Arial", "serif"], 
+        body: ["Montserrat", "sans-serif"], 
       },
       colors: {
         offwhite: '#f8f8f8',

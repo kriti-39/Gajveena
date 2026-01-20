@@ -2,10 +2,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import AboutPage from "./pages/About";
-import History from "./pages/History";
+import History from "./pages/Concept";
 import bgVideo from "/assets/bg.mp4";
 import Navbar from "./components/Navbar/Navbar";
+import CreatorPage from "./pages/CreatorPage";
+import Concept from "./pages/Concept";
 
 const App = () => {
   return (
@@ -27,8 +28,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/history" element={<History />} />
+        <Route path="/creator" element={<CreatorPage/>} />
+        <Route path="/concept" element={<Concept/>} />
       </Routes>
     </div>
   );

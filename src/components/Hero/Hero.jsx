@@ -9,7 +9,7 @@ const Hero = () => {
 
   // Fade-in on mount
   useEffect(() => {
-    const timeout = setTimeout(() => setOpacity(0.5), 50); // fade in to 0.2 opacity after 100ms
+    const timeout = setTimeout(() => setOpacity(0.6), 50); // fade in to 0.2 opacity after 100ms
     return () => clearTimeout(timeout);
   }, []);
 
@@ -18,7 +18,7 @@ const Hero = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       // Calculate new opacity (1 at top, fades out gradually)
-      const newOpacity = Math.max(0, 0.5 - scrollY / 1000); // tweak divisor for speed
+      const newOpacity = Math.max(0, 0.6 - scrollY / 1000); // tweak divisor for speed
       setScrollOpacity(newOpacity);
     };
 
@@ -41,14 +41,14 @@ const Hero = () => {
 
       <Navbar />
 
-      <h1 className="hero-heading mb-1 z-10 mt-[-30px] md:mb-1 Md:mz-10">Gajveena</h1>
+      <h1 className="hero-heading mb-1 z-10 mt-[-30px] md:mb-1 Md:mz-10 text-shadow-lg">Gajveena</h1>
 
       {/* Line Expansion */}
       <div className="flex justify-center w-full z-10">
         <div className="h-[3px] bg-gradient-to-r from-transparent via-[#f9e7c2] to-transparent opacity-90 w-0 animate-lineGrow"></div>
       </div>
 
-      <p className="hero-tagline z-10">Echoes of divinity in every string</p>
+      <p className="text-shadow-xl hero-tagline z-10">Echoes of divinity in every string</p>
     </div>
   );
 };
