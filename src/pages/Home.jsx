@@ -16,7 +16,7 @@ const Home = () => {
       <Creator />
       <div className="text-center py-5">
         <a
-          href="/about"
+          href="/creator"
           className="text-m text-yellowTint font-bold hover:text-white transition-colors duration-300"
         >
           Know more about the Creator

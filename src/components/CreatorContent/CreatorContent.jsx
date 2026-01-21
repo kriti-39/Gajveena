@@ -42,9 +42,9 @@ const CreatorItem = ({ data }) => {
   {/* Image */}
   <motion.div
     className="creator-image w-full md:w-1/2 flex justify-center px-2"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
-    transition={{ delay: 0.2, duration: 1 }}
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 25 }}
+    transition={{ delay: 0.15, duration: 0.6 }}
   >
     <img
       src={data.image}
@@ -56,9 +56,9 @@ const CreatorItem = ({ data }) => {
   {/* Text */}
   <motion.div
     className=" font-body creator-text w-full md:w-[60%] md:pr-[8%] text-justify md:text-left px-2"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 50 }}
-    transition={{ delay: 0.4, duration: 1 }}
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 25 }}
+    transition={{ delay: 0.15, duration: 0.6 }}
   >
     <p className=" font-body text-white text-base sm:text-m leading-relaxed tracking-wide">
       {data.description}

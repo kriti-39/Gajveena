@@ -23,8 +23,8 @@ const Footer = () => {
             {/* Links Column (Home, About, Creator) */}
             <div className="flex flex-col items-center md:items-start space-y-2 mb-0 md:mb-0">
               <a href="/" className="text-[17px] hover:text-yellow-100">Home</a>
-              <a href="/about" className="text-[17px] hover:text-yellow-100">History</a>
               <a href="/creator" className="text-[17px] hover:text-yellow-100">Creator</a>
+              <a href="/concept" className="text-[17px] hover:text-yellow-100">Concept</a>
             </div>
 
             {/* Social Media Column (Instagram, Facebook, YouTube) */}

@@ -52,7 +52,7 @@ const ImageLinkSection = ({
       >
         {/* Left Image */}
         <div
-          onClick={() => navigate("/placeholder-left")}
+          /*onClick={() => navigate("/placeholder-left")}*/
           className="cursor-pointer group flex flex-col items-center"
         >
           <div className="overflow-hidden rounded-2xl">
@@ -71,7 +71,7 @@ const ImageLinkSection = ({
 
         {/* Right Image */}
         <div
-          onClick={() => navigate("/placeholder-right")}
+          /*onClick={() => navigate("/placeholder-right")}*/
           className="cursor-pointer group flex flex-col items-center"
         >
           <div className="overflow-hidden rounded-2xl">

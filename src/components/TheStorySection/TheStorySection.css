@@ -20,6 +20,7 @@
   grid-row: 1 / 2;
   font-family: "Cinzel", serif;
   font-size: 4rem;
+  font-weight: 700;
   color: #f5e6c8;
   margin: 0;
   opacity: 0;
@@ -27,6 +28,7 @@
   transition:
     opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    
 }
 
 /* ================= TEXT ================= */
@@ -46,7 +48,8 @@
 }
 
 .story-text p {
-  margin: 0;
+  margin-top: -8%;
+  width: 90%;
 }
 
 /* ================= IMAGE ================= */
@@ -116,7 +119,9 @@
   }
 
   .story-text p {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
+    margin-top: 0;
+    width: 100%;
   }
 
   .story-image {

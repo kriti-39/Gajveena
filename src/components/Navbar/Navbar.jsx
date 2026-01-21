@@ -5,8 +5,8 @@ import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 
 const NavMenu = [
   { id: 1, title: "Home", link: "/" },
-  { id: 2, title: "Creator", link: "/creator" },
-  { id: 3, title: "Concept", link: "/concept" },
+  { id: 2, title: "Concept", link: "/concept" },
+  { id: 3, title: "Creator", link: "/creator"},
 ];
 
 const Navbar = () => {
