@@ -85,12 +85,21 @@
   .story-grid {
     column-gap: 2.5rem;
   }
+  .story-wrapper{
+    margin-top: 0;
+  }
+  .story-text{
+    margin-top: 10%;
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .story-wrapper {
     padding: 0;
+    margin-top: -10%;
   }
 
   .story-grid {

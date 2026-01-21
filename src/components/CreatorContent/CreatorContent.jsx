@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
@@ -25,17 +25,20 @@ const CreatorItem = ({ data }) => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.09,
   });
 
+  useEffect(() => {
   if (inView && !hasAnimated) {
     setHasAnimated(true);
   }
+}, [inView, hasAnimated]);
+
 
   return (
     <div
   ref={ref}
-  className={`creator-item flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-0 ${
+  className={`creator-item flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-0 ${
     hasAnimated ? "visible" : ""
   }`}
 >
@@ -44,11 +47,13 @@ const CreatorItem = ({ data }) => {
     className="creator-image w-full md:w-1/2 flex justify-center px-2"
     initial={{ opacity: 0, y: 25 }}
     animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 25 }}
-    transition={{ delay: 0.15, duration: 0.6 }}
+    transition={{ delay: 0.12, duration: 0.4 }}
   >
     <img
       src={data.image}
       alt="Debjit Mahalanobis"
+      loading="eager"
+      decoding="async"
       className="w-full max-w-[26rem] md:max-w-[28rem] h-auto rounded-lg shadow-lg object-cover transition-transform duration-300 hover:scale-105"
     />
   </motion.div>
@@ -56,9 +61,9 @@ const CreatorItem = ({ data }) => {
   {/* Text */}
   <motion.div
     className=" font-body creator-text w-full md:w-[60%] md:pr-[8%] text-justify md:text-left px-2"
-    initial={{ opacity: 0, y: 25 }}
-    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 25 }}
-    transition={{ delay: 0.15, duration: 0.6 }}
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: hasAnimated ? 1 : 0, y: hasAnimated ? 0 : 10 }}
+    transition={{ delay: 0.12, duration: 0.4 }}
   >
     <p className=" font-body text-white text-base sm:text-m leading-relaxed tracking-wide">
       {data.description}

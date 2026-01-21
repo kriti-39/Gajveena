@@ -29,15 +29,15 @@ const Footer = () => {
 
             {/* Social Media Column (Instagram, Facebook, YouTube) */}
             <div className="flex flex-col items-center md:items-start space-y-2  mb-2 md:mb-0">
-              <a href="https://instagram.com" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
+              <a href="https://www.instagram.com/d_mahaalbass/" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
                 <FaInstagram />
                 <span>Instagram</span>
               </a>
-              <a href="https://facebook.com" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
+              <a href="https://www.facebook.com/debjit.mahalanobis" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
                 <FaFacebook />
                 <span>Facebook</span>
               </a>
-              <a href="https://youtube.com" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
+              <a href="https://youtu.be/nO1_snB6X50" className="flex items-center space-x-2 text-[17px] hover:text-yellow-100">
                 <FaYoutube />
                 <span>YouTube</span>
               </a>

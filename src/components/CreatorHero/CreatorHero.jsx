@@ -9,7 +9,7 @@ const Creator = () => {
   });
 
   const baseTransition = {
-    duration: 0.65,
+    duration: 0.9,
     ease: [0.22, 1, 0.36, 1], // smooth, premium easing
   };
 
@@ -21,19 +21,19 @@ const Creator = () => {
       {/* ===== Heading ===== */}
       <motion.h1
         className="font-cinzel font-bold text-3xl sm:text-4xl md:text-6xl text-yellowTint mb-4 text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-        transition={{ ...baseTransition, delay: 0.1 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
+        transition={{ ...baseTransition, delay: 0.05 }}
       >
-        Debjit Mahalanobis
+        Creator
       </motion.h1>
 
       {/* ===== Subheading ===== */}
       <motion.h2
         className="font-body font-normal text-base sm:text-lg text-white mb-8 text-center max-w-4xl leading-relaxed"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-        transition={{ ...baseTransition, delay: 0.2 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
+        transition={{ ...baseTransition, delay: 0.12 }}
       >
         Composer | Performer | Improviser | Music Educator | Sound Explorer |
         Research-based Artist
@@ -45,9 +45,9 @@ const Creator = () => {
         {/* Image */}
         <motion.div
           className="w-full flex justify-center md:justify-end"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 24 }}
-          transition={{ ...baseTransition, delay: 0.3 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
+          transition={{ ...baseTransition, delay: 0.2 }}
         >
           <img
             src="/assets/dm2.jpg"
@@ -60,15 +60,15 @@ const Creator = () => {
         <motion.p
           className="
             font-body font-normal text-white
-            text-sm md:text-base
+            text-sm md:text-base 
             leading-relaxed
             text-justify md:text-left
-            max-w-xl
+            max-w-lg 
             mt-0 px-4
           "
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 24 }}
-          transition={{ ...baseTransition, delay: 0.4 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 10 }}
+          transition={{ ...baseTransition, delay: 0.28 }}
         >
           Physics teacher turned musician, Debjit Mahalanobis is a unique
           confluence of Western classical music and the influences of Indian

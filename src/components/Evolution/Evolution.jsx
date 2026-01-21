@@ -104,7 +104,7 @@ const EvolutionItem = ({ index, data }) => {
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ delay: 0.4, duration: 1 }}
       >
-        <h3 className="text-2xl md:text-5xl font-cinzel text-yellowTint mb-4">
+        <h3 className="text-xl font-bold md:text-5xl font-cinzel text-yellowTint mb-4">
           {data.title}
         </h3>
         <p className=" font-montserrat text-white text-base md:text-lg w-full md:w-[78%] text-justify md:text-left">
@@ -121,7 +121,7 @@ const EvolutionItem = ({ index, data }) => {
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ delay: 0.2, duration: 1 }}
       >
-        <h3 className="text-4xl md:text-5xl font-cinzel text-yellowTint mb-4">
+        <h3 className="text-xl font-bold md:text-5xl font-cinzel text-yellowTint mb-4">
           {data.title}
         </h3>
         <p className="font-montserrat text-white text-base md:text-lg w-full md:w-[78%] text-justify md:text-right md:ml-auto">
